@@ -1,79 +1,110 @@
-# RPT3000
-RPT3000 – COBOL Sales Report Generation
-Authors:
-Ben Stearns
-Aidan Dunbar
+# RPT3000 – COBOL Sales Report Generator
 
-Date: 03/19/2026
+## Authors
 
-GitHub:
+* Ben Stearns
+* Aidan Dunbar
+
+**Date:** 03/19/2026
+
+**GitHub Repository:**
 https://github.com/bstearns07/RPT3000
 
-Overview: RPT3000 is a COBOL program that reads a customer master file and produces a formatted Year-To-Date (YTD) sales report. The report includes:
+---
 
-Customer details
+## Overview
 
-Current and prior year sales
+**RPT3000** is a COBOL program that reads a customer master file and generates a professionally formatted Year-To-Date (YTD) sales report.
 
-Dollar change in sales
+The report includes:
 
-Percentage change in sales
+* Customer details
+* Current year sales (YTD)
+* Previous year sales (YTD)
+* Dollar change in sales
+* Percentage change in sales
+* Grand totals across all customers
 
-Grand totals across all customers
+The output is formatted for readability, mimicking a professional business report layout with headings, alignment, and pagination.
 
-Includes formatting to make the report appear in a proffesional sense
-How It Works:
+---
 
-Opens input and output files
+## How It Works
 
-Retrieves current system date and time
+### Initialization
 
-Prepares report header fields
+* Opens input and output files
+* Retrieves the current system date and time
+* Prepares report header fields
 
-Reads each customer record
+### Record Processing
 
-For each record:
+* Reads each customer record from the input file
+* For each record:
 
-Formats customer data
+  * Formats customer information for output
+  * Performs calculations:
 
-Computes:
+    * **Change Amount** = This YTD − Last YTD
+    * **Change Percent** = (Change / Last YTD) × 100
 
-Change Amount = This YTD - Last YTD
+### Edge Case Handling
 
-Change Percent = (Change / Last YTD) × 100
+* If **Last YTD = 0**:
 
-Handles edge cases:
+  * Percentage is set to `999.9` to avoid division errors
 
-If Last YTD = 0 → sets percent to 999.9
+### Output Generation
 
-Writes formatted line to output
+* Writes formatted customer data to the report
+* Updates running totals for:
 
-Updates running totals
+  * This YTD sales
+  * Last YTD sales
 
-Tracks line count
+### Pagination
 
-Prints headings when page limit is reached (55 lines)
+* Tracks number of lines printed
+* Prints headings when page limit (55 lines) is reached
 
-Calculates grand totals
+### Final Totals
 
-Computes overall percentage change
+* Calculates grand totals
+* Computes overall percentage change
+* Writes a summary line at the end of the report
 
-Writes summary line at end of report
+---
 
-This program demonstrates structured COBOL programming, file handling, report formatting, and basic business calculations.
+## Files
 
-Files
+| File Name     | Description                             |
+| ------------- | --------------------------------------- |
+| `RPT3000.cbl` | COBOL source program                    |
+| `JCLRPT2.jcl` | JCL used to compile and execute program |
+| `README.md`   | Project documentation                   |
 
-RPT3000.cbl – COBOL source program
+---
 
-JCLRPT2.jcl – JCL used to compile and execute the program
+## Notes
 
-README.md – Project documentation
+* Values may be hardcoded for demonstration purposes
+* Numeric editing is used to format output fields
+* Designed for educational use
+* Demonstrates:
 
-Notes
+  * Structured COBOL programming
+  * File handling
+  * Report formatting
+  * Business-oriented calculations
 
-Values are hardcoded for demonstration purposes
+---
 
-Numeric editing is used to format output
+## Purpose
 
-Program is intended for educational use
+This project showcases fundamental COBOL concepts in a real-world style reporting scenario, commonly seen in legacy enterprise systems such as banking, insurance, and financial reporting platforms.
+
+---
+
+## License
+
+This project is intended for educational use.
