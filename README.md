@@ -62,11 +62,6 @@ The output is formatted for readability, mimicking a professional business repor
   * This YTD sales
   * Last YTD sales
 
-### Pagination
-
-* Tracks number of lines printed
-* Prints headings when page limit (55 lines) is reached
-
 ### Final Totals
 
 * Calculates grand totals
