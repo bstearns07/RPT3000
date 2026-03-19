@@ -1,8 +1,8 @@
       *****************************************************************
       * Title..........: RPT3000 - Future Value Calculator
-      * Programmer.....: Ben Stearns and Kirby Dunker
+      * Programmer.....: Ben Stearns and Aidan Dunbar
       * Date...........: 2-24-26
-      * GitHub URL.....: https://github.com/KirbyD-YEAH/RPT3000.git
+      * GitHub URL.....: https://github.com/bstearns07/RPT3000
       * Program Desc...: Generates a sales report for customers based
       *                  on YTD and percent change from last year
       * File Desc......: Define the sole source code for application
@@ -143,7 +143,7 @@
            05  FILLER              PIC X(2)     VALUE SPACE.
            05  FILLER            PIC X(20) VALUE " CUSTOMER NAME      ".
            05  FILLER              PIC X(3)     VALUE SPACE.
-           05  FILLER              PIC X(10)    VALUE " THIS YD ".
+           05  FILLER              PIC X(10)    VALUE " THIS YTD".
            05  FILLER              PIC X(4)     VALUE SPACE.
            05  FILLER              PIC X(12)    VALUE " LAST YTD   ".
            05  FILLER              PIC X(4)     VALUE SPACE.
@@ -350,11 +350,6 @@
            WRITE PRINT-AREA.
            MOVE ZERO TO LINE-COUNT.
            MOVE 2 TO SPACE-CONTROL.
-
-      *340-WRITE-PAGE-TOP-LINE.
-
-      *    WRITE PRINT-AREA.
-      *    MOVE 1 TO LINE-COUNT.
 
        350-WRITE-REPORT-LINE.
 
