@@ -99,12 +99,3 @@ The output is formatted for readability, mimicking a professional business repor
 
 ---
 
-## Purpose
-
-This project showcases fundamental COBOL concepts in a real-world style reporting scenario, commonly seen in legacy enterprise systems such as banking, insurance, and financial reporting platforms.
-
----
-
-## License
-
-This project is intended for educational use.
