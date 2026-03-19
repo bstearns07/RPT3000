@@ -76,7 +76,7 @@ The output is formatted for readability, mimicking a professional business repor
 | 📄 File Name     | 📌 Description                             |
 |------------------|-------------------------------------------|
 | `RPT3000.cbl`    | COBOL source program                      |
-| `JCLRPT2.jcl`    | JCL used to compile and execute program   |
+| `JCLRPT3.jcl`    | JCL used to compile and execute program   |
 | `README.md`      | Project documentation                     |
 
 ---
