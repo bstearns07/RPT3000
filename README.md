@@ -1,4 +1,5 @@
 # 📊 RPT3000 – COBOL Sales Report Generator
+![Output](assets/output.png)
 
 ## 👨‍💻 Authors
 
