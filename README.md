@@ -25,29 +25,11 @@ Includes formatting to make the report appear in a proffesional sense
 
 This program demonstrates structured COBOL programming, file handling, report formatting, and basic business calculations.
 
-Program Details
-
-Initial Investment Amount: 1000
-
-Number of Years: 10
-
-Yearly Interest Rate: 5.5%
-
-Investment Doubling: The investment amount is doubled twice during execution
-
-
-<img width="454" height="498" alt="Screenshot 2026-02-04 150406" src="https://github.com/user-attachments/assets/58c13580-cd96-46a9-bd05-b7203e23b51e" />
-
-
-
-
-
-
 Files
 
-CALC2000.cbl – COBOL source program
+RPT3000.cbl – COBOL source program
 
-JCLCLG.jcl – JCL used to compile and execute the program
+JCLRPT2.jcl – JCL used to compile and execute the program
 
 README.md – Project documentation
 
