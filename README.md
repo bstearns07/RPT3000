@@ -1,19 +1,26 @@
 # 📊 RPT3000 – COBOL Sales Report Generator
-![Output](assets/output.png)
 
 ## 👨‍💻 Authors
 
-* Ben Stearns  
-* Aidan Dunbar  
+[@bstearns07](https://github.com/bstearns07) Ben Stearns<br>
+[@KirbyD-YEAH](https://github.com/KirbyD-YEAH) Aidan Dunbar
 
 📅 **Date:** 03/19/2026  
 
-🔗 **GitHub Repository:**  
-https://github.com/bstearns07/RPT3000  
-
 ---
 
-## 📌 Overview
+## Table of Contents
+- 📌 [Summary](#-summary)
+- ⭐ [How It Works](#-how-it-works)
+- ✨ [Features](#-features)
+- 🧰 [Tech Stack](#-tech-stack)
+- 🔧 [Development Tools](#-development-tools)
+- 🧩 [Core Concepts](#-core-concepts)
+- 📝 [New Topics Covered](#-new-topics-covered)
+- 📘 [What I Learned](#-what-i-learned)
+- 🖼 [Screenshots](#-screenshots)
+
+## 📌 Summary
 
 **RPT3000** is a COBOL program that reads a customer master file and generates a professionally formatted Year-To-Date (YTD) sales report.
 
@@ -30,7 +37,7 @@ The output is formatted for readability, mimicking a professional business repor
 
 ---
 
-## ⚙️ How It Works
+## ⭐ How It Works
 
 ### 🚀 Initialization
 
@@ -71,6 +78,36 @@ The output is formatted for readability, mimicking a professional business repor
 
 ---
 
+## ✨ Features
+- 📊 Generates **multi-level sales reports** (customer + branch + grand totals)  
+- 🔄 Implements **control-break logic** for branch grouping  
+- 📈 Calculates **change amount and percent change**  
+- 📄 Produces **multi-page formatted reports** with headers  
+- 🧾 Clean, aligned output using **fixed-length record formatting**  
+- ⚠️ Handles **divide-by-zero and overflow errors** gracefully  
+- 🕒 Includes **dynamic date/time stamping**
+
+---
+
+## 🧰 Tech Stack
+![COBOL](https://img.shields.io/badge/COBOL-Enterprise%206.4-blue?style=flat-square)
+![JCL](https://img.shields.io/badge/JCL-Batch%20Processing-grey?style=flat-square)
+![z/OS](https://img.shields.io/badge/IBM-z%2FOS-0f62fe?style=flat-square)
+![VS Code](https://img.shields.io/badge/VS%20Code-Zowe%20Explorer-007ACC?style=flat-square)
+
+- **Enterprise COBOL 6.4** – Core business logic  
+- **JCL** – Batch execution (compile/link/run)  
+- **IBM z/OS** – Mainframe runtime environment  
+
+---
+
+## 🔧 Development Tools
+- 💻 Visual Studio Code + Zowe Explorer  
+- 🖥️ IBM z/OS Mainframe  
+- 📂 Partitioned Datasets (PDS)  
+
+---
+
 ## 📁 Files
 
 | 📄 File Name     | 📌 Description                             |
@@ -81,7 +118,7 @@ The output is formatted for readability, mimicking a professional business repor
 
 ---
 
-## 📝 Notes
+## 🧩 Core Concepts
 
 * ⚙️ Values may be hardcoded for demonstration purposes  
 * 🔢 Numeric editing is used to format output fields  
@@ -94,3 +131,24 @@ The output is formatted for readability, mimicking a professional business repor
   * Business-oriented calculations  
 
 ---
+
+## 📝 New Topics Covered
+- 🔀 **Control Break Processing** (branch change detection)  
+- 📊 **Subtotals & Group Aggregation** (branch-level totals)  
+- 🧠 **State Tracking** using control fields (`OLD-BRANCH-NUMBER`)  
+- 🔄 **Conditional Output Formatting** (suppressing repeated values)  
+- ➗ **Advanced error handling** (`ON SIZE ERROR`, divide-by-zero cases)  
+
+---
+
+## 📘 What I Learned
+- How to implement **control-break logic**, a core pattern in enterprise batch systems  
+- Managing **grouped data processing and subtotals**  
+- Designing **multi-level reports** (detail → subtotal → grand total)  
+- Handling **edge cases in financial calculations**  
+- Structuring COBOL programs to support **scalable reporting logic**  
+
+## 🖼 Screenshots
+
+### Output
+![Output](assets/output.png)
