@@ -39,6 +39,13 @@ The output is formatted for readability, mimicking a professional business repor
 
 ## ⭐ How It Works
 
+In order to run this program, please do the following:
+
+Download the provided JCL, COBOL source code, and CUSTMAST file that contains the data this program relies on
+Add these files to your IBM mainframe environment
+Update the JCL DSN names to match the filepaths of your environment
+Submit the JCL job to your mainframe for processing
+
 ### 🚀 Initialization
 
 * Opens input and output files  
