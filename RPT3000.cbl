@@ -1,5 +1,5 @@
       *****************************************************************
-      * Title..........: RPT3000 - Future Value Calculator
+      * Title..........: RPT3000 - Sales Report
       * Programmer.....: Ben Stearns and Aidan Dunbar
       * Date...........: 3-19-26
       * GitHub URL.....: https://github.com/bstearns07/RPT3000
